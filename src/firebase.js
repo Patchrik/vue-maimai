@@ -7,3 +7,7 @@ const firebaseConfig = {
   projectId: process.env.VUE_APP_FB_PROJECT_ID,
   appId: process.env.VUE_APP_FB_APP_ID,
 };
+
+firebase.initializeApp(firebaseConfig);
+
+export const db = firebase.firestore();
