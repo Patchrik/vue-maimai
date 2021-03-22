@@ -1,8 +1,16 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark> </v-app-bar>
+    <v-app-bar app color="gray" dark>
+      <h2>Mai-Mai</h2>
+      <v-spacer />
+      <router-link class="mx-2" to="/create">Create</router-link>
 
-    <v-main> </v-main>
+      <router-link class="mx-2" to="/feed">Memes</router-link>
+    </v-app-bar>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>
   </v-app>
 </template>
 
@@ -17,3 +25,9 @@
     }),
   };
 </script>
+
+<style scoped>
+  a {
+    color: aliceblue;
+  }
+</style>
