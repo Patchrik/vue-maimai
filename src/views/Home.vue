@@ -1,5 +1,5 @@
 <template>
-  <div>Hello from the home page.</div>
+  <v-container></v-container>
 </template>
 
 <script>
